@@ -1,0 +1,14 @@
+.main-header {
+  width: 320px;
+  height: 56px;
+  color: #000000;
+  background-color: #ffffff;
+
+  &__logo {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
+  }
+}

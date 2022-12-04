@@ -1,0 +1,42 @@
+.catalog {
+  width: 320px;
+
+  &__item-card {
+    padding: 24px 20px 25px;
+  }
+
+  &__item-photo {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  &__item-photo img {
+    display: block;
+  }
+
+  &__item-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-transform: uppercase;
+  }
+
+  &__item-author {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 11px;
+    color: #333333;
+  }
+
+  &__item-likes img {
+    margin-right: 10px;
+  }
+
+  &__item-likes span {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+  }
+}

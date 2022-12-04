@@ -1,0 +1,36 @@
+.main-container {
+  width: 320px;
+  margin: 0 auto;
+
+  &__logo {
+    padding: 90px 0;
+    background-color: #7295ba;
+    background-image: url("../../img/sedona-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 29px;
+  }
+
+  &__logo::after {
+    content: "";
+    display: block;
+    width: 100%;
+    background-image: url("../../img/saw.svg");
+    position: relative;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    left: 0;
+    bottom: -25px;
+  }
+
+  &__logo-catalog {
+    padding: 52px 0 67px;
+  }
+
+  &__logo-img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+}
