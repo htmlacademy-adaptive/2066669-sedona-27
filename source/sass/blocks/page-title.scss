@@ -6,7 +6,34 @@
     margin: 0 0 35px 0;
   }
 
+  &__decoration {
+    position: relative;
+  }
+
+  &__decoration::after {
+    content: "";
+    position: absolute;
+    bottom: -37px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #e6e6e6;
+  }
+
+  &__decoration-form {
+    position: relative;
+  }
+
+  &__decoration-form::after {
+    bottom: -28px;
+  }
+
   &__caption-catalog {
+    margin: 37px 0 25px 0;
+  }
+
+  &__caption-form {
     margin: 37px 0 25px 0;
   }
 
@@ -18,5 +45,10 @@
   &__description-catalog {
     padding: 0;
     margin: 0 0 37px 0;
+  }
+
+  &__description-form {
+    padding: 0;
+    margin: 0 0 28px 0;
   }
 }
