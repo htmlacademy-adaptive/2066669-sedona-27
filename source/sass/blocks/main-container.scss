@@ -3,7 +3,7 @@
   margin: 0 auto;
 
   &__logo {
-    padding: 90px 0;
+    padding: 90px 0 29px;
     background-color: #7295ba;
     background-image: url("../../img/sedona-background.jpg");
     background-size: cover;
@@ -20,16 +20,27 @@
     background-position: bottom;
     background-repeat: no-repeat;
     left: 0;
-    bottom: -25px;
+    height: 57px;
+    bottom: -29px;
   }
 
-  &__logo-catalog {
-    padding: 52px 0 67px;
+  &__logo-other {
+    padding: 52px 0 10px;
+    background-image: url("../../img/background-catalog.jpg");
+    background-position: bottom;
   }
 
-  &__logo-form {
-    padding: 52px 0 67px;
-    margin-bottom: 36px;
+  &__logo-other::after {
+    content: "";
+    display: block;
+    width: 100%;
+    background-image: url("../../img/saw.svg");
+    position: relative;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    left: 0;
+    height: 57px;
+    bottom: -10px;
   }
 
   &__logo-img {
