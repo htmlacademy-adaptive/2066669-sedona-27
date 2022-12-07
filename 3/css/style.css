@@ -126,7 +126,7 @@ a {
   margin: 0 auto;
 }
 .main-container__logo {
-  padding: 90px 0;
+  padding: 90px 0 29px;
   background-color: #7295ba;
   background-image: url("../../img/sedona-background.jpg");
   background-size: cover;
@@ -142,14 +142,25 @@ a {
   background-position: bottom;
   background-repeat: no-repeat;
   left: 0;
-  bottom: -25px;
+  height: 57px;
+  bottom: -29px;
 }
-.main-container__logo-catalog {
-  padding: 52px 0 67px;
+.main-container__logo-other {
+  padding: 52px 0 10px;
+  background-image: url("../../img/background-catalog.jpg");
+  background-position: bottom;
 }
-.main-container__logo-form {
-  padding: 52px 0 67px;
-  margin-bottom: 36px;
+.main-container__logo-other::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-image: url("../../img/saw.svg");
+  position: relative;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  left: 0;
+  height: 57px;
+  bottom: -10px;
 }
 .main-container__logo-img {
   position: relative;
@@ -162,33 +173,14 @@ a {
   padding: 0 15px;
 }
 .page-title__caption {
-  padding: 0 6px;
-  margin: 0 0 35px 0;
-}
-.page-title__decoration {
-  position: relative;
-}
-.page-title__decoration::after {
-  content: "";
-  position: absolute;
-  bottom: -37px;
-  left: 0;
-  display: block;
-  width: 100%;
-  height: 1px;
-  background-color: #e6e6e6;
-}
-.page-title__decoration-form {
-  position: relative;
-}
-.page-title__decoration-form::after {
-  bottom: -28px;
+  padding: 5px 9px;
+  margin: 0 0 30px 0;
 }
 .page-title__caption-catalog {
   margin: 37px 0 25px 0;
 }
 .page-title__caption-form {
-  margin: 37px 0 25px 0;
+  margin: 37px 0 24px 0;
 }
 .page-title__description {
   padding: 0;
@@ -212,6 +204,7 @@ a {
 }
 
 .description {
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -227,14 +220,47 @@ a {
   text-align: center;
 }
 .advantages__item-big {
+  position: relative;
   color: #ffffff;
   background-color: #81b3d2;
-  padding: 54px 18px 40px;
+  padding: 38px 18px 37px;
+}
+.advantages__item-big:first-child {
+  height: 210px;
+  padding: 55px 18px 40px;
+}
+.advantages__item-big:first-child::after {
+  content: "";
+  display: block;
+  width: 100%;
+  background-image: url("../../img/saw-second.svg");
+  position: absolute;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  top: -37px;
+  left: 0;
+  height: 57px;
+}
+.advantages__item-line {
+  position: relative;
+}
+.advantages__item-line::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+}
+.advantages__item-line:last-child::after {
+  display: none;
 }
 .advantages__item-small {
   color: #000000;
   background-color: #eeeeee;
-  padding: 24px 26px;
+  padding: 25px 32px 26px;
 }
 .advantages__item-photo {
   padding: 0;
@@ -258,16 +284,23 @@ a {
   top: 23px;
 }
 .advantages__title {
-  margin: 0 0 11px 0;
+  margin: 0 0 10px 0;
 }
 .advantages__title-left {
   text-align: start;
+  margin-bottom: 16px;
 }
 .advantages__number {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
   margin: 0 0 17px 0;
 }
 .advantages__description {
   margin: 0;
+}
+.advantages__description-big {
+  color: #ffffff;
 }
 .advantages__description-left {
   text-align: start;
@@ -278,18 +311,24 @@ a {
 
 .find-hotel {
   text-align: center;
-  padding: 38px 18px 49px;
+  padding: 40px 18px 49px;
 }
 .find-hotel__title {
+  font-size: 21px;
   margin: 0;
 }
 .find-hotel__button {
+  font-size: 21px;
   width: 284px;
   padding-top: 16px;
   padding-bottom: 16px;
 }
+.find-hotel__description {
+  margin: 22px 0 31px;
+}
 
 .button {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -302,7 +341,7 @@ a {
 
 .map {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
 .main-footer {
@@ -358,15 +397,25 @@ a {
   width: 320px;
 }
 .catalog__item-card {
-  padding: 24px 20px 25px;
+  padding: 25px 20px 25px;
 }
 .catalog__item-decoration {
   position: relative;
 }
-.catalog__item-decoration::after {
+.catalog__item-decoration:last-child::after {
   content: "";
   position: absolute;
   bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+}
+.catalog__item-decoration::before {
+  content: "";
+  position: absolute;
+  top: 0;
   left: 0;
   display: block;
   width: 100%;
@@ -409,10 +458,10 @@ a {
   text-align: center;
 }
 .video__wrapper {
-  padding: 17px 27px 0;
+  padding: 18px 27px 0;
 }
 .video__title {
-  margin: 0 0 25px;
+  margin: 0 0 27px;
 }
 .video__description {
   margin: 0 0 38px;
@@ -422,20 +471,27 @@ a {
   margin: 0 auto;
 }
 
-.feedback {
-  padding: 0 20px;
-}
 .feedback__decoration {
   position: relative;
   color: #333333;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 20px 0;
   border: 0;
 }
 .feedback__decoration::after {
   content: "";
   position: absolute;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+}
+.feedback__decoration:first-child::before {
+  content: "";
+  position: absolute;
+  top: -55px;
   left: 0;
   display: block;
   width: 100%;
@@ -493,13 +549,14 @@ a {
 }
 .feedback__review {
   border: none;
-  padding: 0;
+  padding: 0 20px 0;
   margin: 0;
 }
+.feedback__button-area {
+  padding: 0 20px 0;
+}
 .feedback__button {
-  width: 284px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 16px 33px;
 }
 .feedback__required {
   font-weight: 400;
@@ -516,6 +573,7 @@ a {
   width: 100%;
 }
 .input__text {
+  font-family: "PT Sans", sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
