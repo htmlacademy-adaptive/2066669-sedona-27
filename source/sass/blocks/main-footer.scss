@@ -1,31 +1,21 @@
 .main-footer {
   text-align: center;
+}
 
-  &__wrapper {
-    padding-top: 28px;
-    padding-bottom: 23px;
-  }
+.main-footer__wrapper {
+  padding-top: 28px;
+  padding-bottom: 23px;
+}
 
-  &__tag {
-    margin-bottom: 33px;
-    // font-weight: 700;
-    // font-size: 21px;
-    // line-height: 26px;
-    // color: #000000;
-    // text-transform: uppercase;
-    // margin-bottom: 33px;
-  }
+.main-footer__tag {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0 0 33px;
+}
 
-  &__tag-hashtag {
-    font-weight: 700;
-    font-size: 21px;
-    line-height: 26px;
-    color: #000000;
-    text-transform: uppercase;
-    margin: 0;
-  }
-
-  &__social {
-    margin-bottom: 40px;
-  }
+.main-footer__social {
+  margin-bottom: 40px;
 }

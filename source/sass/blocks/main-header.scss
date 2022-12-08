@@ -1,14 +1,15 @@
 .main-header {
   width: 320px;
+  margin: 0 auto;
   height: 56px;
   color: #000000;
   background-color: #ffffff;
+}
 
-  &__logo {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0%);
-  }
+.main-header__logo {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0%);
 }

@@ -1,21 +1,21 @@
 .main-container {
   width: 320px;
   margin: 0 auto;
+}
 
-  &__logo {
-    padding: 90px 0 29px;
-    background-color: #7295ba;
-    background-image: url("../../img/sedona-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-bottom: 29px;
-  }
+.main-container__logo {
+  padding: 90px 0 29px;
+  background-color: #7295ba;
+  background-image: url("../img/sedona-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 29px;
 
-  &__logo::after {
+  &::after {
     content: "";
     display: block;
     width: 100%;
-    background-image: url("../../img/saw.svg");
+    background-image: url("../img/saw.svg");
     position: relative;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -24,29 +24,29 @@
     bottom: -29px;
   }
 
-  &__logo-other {
+  &--other {
     padding: 52px 0 10px;
-    background-image: url("../../img/background-catalog.jpg");
+    background-image: url("../img/background-catalog.jpg");
     background-position: bottom;
-  }
 
-  &__logo-other::after {
-    content: "";
-    display: block;
-    width: 100%;
-    background-image: url("../../img/saw.svg");
-    position: relative;
-    background-position: bottom;
-    background-repeat: no-repeat;
-    left: 0;
-    height: 57px;
-    bottom: -10px;
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      background-image: url("../img/saw.svg");
+      position: relative;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      left: 0;
+      height: 57px;
+      bottom: -10px;
+    }
   }
+}
 
-  &__logo-img {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin: 0 auto;
-  }
+.main-container__logo-img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }

@@ -5,25 +5,25 @@
   align-items: center;
   margin: 0 auto;
   z-index: 1;
+}
 
-  &__list {
-    background-color: #ffffff;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    width: 320px;
-    position: relative;
-  }
+.main-nav__list {
+  background-color: #ffffff;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 320px;
+  position: relative;
+}
 
-  &__toggle {
-    display: none;
-    background-image: url("../../img/toggle-icon.svg");
-    background-color: #ffffff;
-    width: 23px;
-    height: 22px;
-    background-repeat: no-repeat;
-    border: none;
-    cursor: pointer;
-    margin: 17px 20px;
-  }
+.main-nav__toggle {
+  display: none;
+  background-image: url("../img/toggle-icon.svg");
+  background-color: #ffffff;
+  width: 23px;
+  height: 22px;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  margin: 17px 20px;
 }
