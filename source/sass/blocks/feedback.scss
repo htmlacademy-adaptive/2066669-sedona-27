@@ -155,7 +155,7 @@
   font-size: 12px;
   line-height: 21px;
   text-transform: uppercase;
-  color: #33333399;
+  color: #333333;
   margin: 1px 0 24px;
   text-align: end;
 }
@@ -173,9 +173,9 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-  color: #000000;
+  color: $black;
   text-transform: none;
-  background-color: #f2f2f2;
+  background-color: $color-input;
   border: none;
   outline: none;
 }
