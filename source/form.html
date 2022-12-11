@@ -39,7 +39,7 @@
     <main class="main-container">
       <div class="main-container__logo main-container__logo--other">
         <h1 class="visually-hidden">Седона.</h1>
-        <img class="main-container__logo-img" src="img/sedona-logo.svg" width="229" height="39" alt="Альтернативный логотип Седоны.">
+        <img src="img/sedona-logo.svg" width="229" height="39" alt="Альтернативный логотип Седоны.">
       </div>
 
       <!-- Page title -->
@@ -54,80 +54,99 @@
       <!-- Feedback -->
 
       <form class="feedback" action="https://echo.htmlacademy.ru/" method="post">
-        <div class="feedback__wrapper">
-          <fieldset class="feedback__item feedback__decoration">
-            <legend class="title feedback__title">Представьтесь:</legend>
-            <label class="feedback__text" for="firstname">Имя*:</label>
-            <input class="input feedback__input" type="text" name="firstname" id="firstname" placeholder="Пётр" required>
+        <fieldset class="feedback__item">
+          <legend class="title feedback__title">Представьтесь:</legend>
 
-            <label class="feedback__text" for="surname">Фамилия*:</label>
-            <input class="input feedback__input" type="text" name="surname" id="surname" placeholder="Пустота" required>
+          <label class="input-text feedback__input-text" for="firstname">
+            <span>Имя*:</span>
+            <input type="text" name="firstname" id="firstname" placeholder="Пётр" required>
+          </label>
 
-            <label class="feedback__text" for="midname">Отчество:</label>
-            <input class="input feedback__input feedback__input--mb-big" type="text" name="midname" id="midname" placeholder="Викторович" required>
-          </fieldset>
+          <label class="input-text feedback__input-text" for="surname">
+            <span>Фамилия*:</span>
+            <input type="text" name="surname" id="surname" placeholder="Пустота" required>
+          </label>
 
-          <fieldset class="feedback__item feedback__decoration">
-            <legend class="title feedback__title">Контактная информация:</legend>
+          <label class="input-text feedback__input-text" for="midname">
+            <span>Отчество:</span>
+            <input type="text" name="midname" id="midname" placeholder="Викторович" required>
+          </label>
+        </fieldset>
 
-            <label class="feedback__text" for="phone">Контактный телефон*:</label>
-            <input class="input feedback__input " type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+        <fieldset class="feedback__item">
+          <legend class="title feedback__title">Контактная информация:</legend>
 
-            <label class="feedback__text" for="email">Электронная почта*:</label>
-            <input class="input feedback__input feedback__input--mb-mid" type="email" name="email" id="email" placeholder="Введите e-mail" required>
-          </fieldset>
+          <label class="input-text feedback__input-text" for="phone">
+            <span>Контактный телефон*:</span>
+            <input type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
+          </label>
 
-          <fieldset class="feedback__item feedback__decoration">
-            <legend class="title feedback__title">Ваше общее впечатление:</legend>
-            <input class="feedback-radio__input" type="radio" name="impression" value="positive" checked>
-            <label class="feedback-radio__text">Скорее положительное</label>
+          <label class="input-text feedback__email" for="email">
+            <span>Электронная почта*:</span>
+            <input type="email" name="email" id="email" placeholder="Введите e-mail" required>
+          </label>
+        </fieldset>
 
-            <input class="feedback-radio__input" type="radio" name="impression" value="negative">
-            <label class="feedback-radio__text">Скорее отрицательное</label>
+        <fieldset class="feedback__item">
+          <legend class="title feedback__title">Ваше общее впечатление:</legend>
+          <label class="choice feedback__radio">
+            <input type="radio" name="impression" value="positive" checked>
+            <span>Скорее положительное</span>
+          </label>
 
-            <input class="feedback-radio__input" type="radio" name="impression" value="uncertainty">
-            <label class="feedback-radio__text feedback-radio__text--mb-big">Затрудняюсь ответить</label>
-          </fieldset>
+          <label class="choice feedback__radio">
+            <input type="radio" name="impression" value="negative">
+            <span>Скорее отрицательное</span>
+          </label>
 
-          <fieldset class="feedback__item feedback__decoration">
-            <legend class="title feedback__title">Посещенные достопримечательности:</legend>
-            <div class="feedback__checkbox">
-              <input class="feedback-check__input" type="checkbox" name="impression" value="bridge" checked>
-              <label class="feedback-check__text">Мост Дьявола</label>
+          <label class="choice feedback__radio feedback__radio--mb">
+            <input type="radio" name="impression" value="uncertainty">
+            <span>Затрудняюсь ответить</span>
+          </label>
+        </fieldset>
 
-              <input class="feedback-check__input" type="checkbox" name="impression" value="mountain">
-              <label class="feedback-check__text">Гора-Колокол</label>
+        <fieldset class="feedback__item">
+          <legend class="title feedback__title">Посещенные достопримечательности:</legend>
+          <label class="choice feedback__checkbox">
+            <input type="checkbox" name="impression" value="bridge" checked>
+            <span>Мост Дьявола</span>
+          </label>
 
-              <input class="feedback-check__input" type="checkbox" name="impression" value="park">
-              <label class="feedback-check__text">Слайд-парк</label>
+          <label class="choice feedback__checkbox">
+            <input type="checkbox" name="impression" value="mountain">
+            <span>Гора-Колокол</span>
+          </label>
 
-              <input class="feedback-check__input" type="checkbox" name="impression" value="rocks">
-              <label class="feedback-check__text feedback-check__text--mb-big">Красные скалы</label>
-            </div>
-          </fieldset>
+          <label class="choice feedback__checkbox">
+            <input type="checkbox" name="impression" value="park">
+            <span>Слайд-парк</span>
+          </label>
 
-          <fieldset class="feedback__item">
-            <legend class="title feedback__title">Опишите свои эмоции:</legend>
+          <label class="choice feedback__checkbox feedback__checkbox--mb">
+            <input type="checkbox" name="impression" value="rocks">
+            <span>Красные скалы</span>
+          </label>
+        </fieldset>
 
-            <div class="feedback-text__entry">
-              <textarea class="feedback-text__input" name="overview" id="overview" placeholder="Опишите подробно все свои восторги "></textarea>
-            </div>
-          </fieldset>
+        <fieldset class="feedback__item feedback__item--last">
+          <legend class="title feedback__title">Опишите свои эмоции:</legend>
+          <!-- <div class="feedback__entry">
 
-          <div class="feedback__button-area">
-            <button class="button feedback__button" type="submit">Отправить отзыв</button>
-            <p class="feedback__required">* — обязательные поля</p>
-          </div>
+          </div> -->
+          <textarea class="text-area feedback__text-area" name="overview" id="overview" placeholder="Опишите подробно все свои восторги "></textarea>
+        </fieldset>
+
+        <div class="feedback__button-area">
+          <button class="button feedback__button" type="submit">Отправить отзыв</button>
+          <p class="feedback__required">* — обязательные поля</p>
         </div>
       </form>
 
       <!-- Footer -->
 
       <footer class="main-footer">
-        <div class="main-footer__wrapper">
-          <div class="main-footer__tag">
-            <p class="main-footer__tag-hashtag">#visitsedona</p>
-          </div>
+        <div class="main-footer__wrapper main-footer__wrapper--pt-big">
+          <p class="main-footer__tag">#visitsedona</p>
 
           <div class="social main-footer__social">
             <a class="social__link" href="https://vk.com/htmlacademy">

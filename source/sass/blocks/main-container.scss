@@ -11,6 +11,13 @@
   background-repeat: no-repeat;
   margin-bottom: 33px;
 
+  & img {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+  }
+
   &::after {
     content: "";
     display: block;
@@ -44,9 +51,9 @@
   }
 }
 
-.main-container__logo-img {
-  position: relative;
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
-}
+// .main-container__logo-img {
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   margin: 0 auto;
+// }

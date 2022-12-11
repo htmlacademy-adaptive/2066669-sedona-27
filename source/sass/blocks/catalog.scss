@@ -4,9 +4,6 @@
 
 .catalog__card {
   padding: 25px 20px 25px;
-}
-
-.catalog__decoration {
   position: relative;
 
   &::before {
@@ -33,6 +30,34 @@
     }
   }
 }
+
+// .catalog__decoration {
+//   position: relative;
+
+//   &::before {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     display: block;
+//     width: 100%;
+//     height: 1px;
+//     background-color: $color-decoration-line;
+//   }
+
+//   &--down:last-child {
+//     &::after {
+//       content: "";
+//       position: absolute;
+//       bottom: 0;
+//       left: 0;
+//       display: block;
+//       width: 100%;
+//       height: 1px;
+//       background-color: $color-decoration-line;
+//     }
+//   }
+// }
 
 .catalog__photo {
   display: block;
