@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
 
@@ -10,23 +11,23 @@
 
     <header class="main-header">
       <a class="main-header__logo" href="index.html">
-        <img src="./img/header-logo.svg" width="185" height="96" alt="Маленький логотип Седоны">
+        <img src="img/header-logo.svg" width="185" height="96" alt="Маленький логотип Седоны">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a href="#">Фото и видео</a>
+              <a class="site-list__link" href="#">Фото и видео</a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">Форма Отзыва</a>
+              <a class="site-list__link" href="form.html">Форма Отзыва</a>
             </li>
             <li class="site-list__item">
-              <a href="https://htmlacademy.ru/">HTML Academy</a>
+              <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
         </div>
@@ -36,17 +37,17 @@
     <!-- Main -->
 
     <main class="main-container">
-      <div class="main-container__logo">
+      <div class="main-container__logo main-container__logo--other">
         <h1 class="visually-hidden">Седона.</h1>
-        <img src="./img/sedona-logo.svg" width="229" height="39" alt="Альтернативный логотип Седоны.">
+        <img src="img/sedona-logo.svg" width="229" height="39" alt="Альтернативный логотип Седоны.">
       </div>
 
       <!-- Page title -->
 
       <div class="page-title">
         <div class="page-title__wrapper">
-          <h2 class="title">Фото и видео</h2>
-          <p class="description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+          <h2 class="title page-title__caption page-title__caption--m-big">Фото и видео</h2>
+          <p class="description page-title__description page-title__description--m-big">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         </div>
       </div>
 
@@ -54,49 +55,53 @@
 
       <div class="catalog">
         <div class="catalog__wrapper">
-          <div class="catalog__item">
-            <div class="item-card">
-              <div class="photo item-card__photo">
-                <img src="./img/photo-1-mobile.jpg" width="280" height="280" alt="Трасса в закате.">
-              </div>
-              <div class="item-card__title">Неродные просторы</div>
-              <div class="item-card__author">Автор фото: <span>Борис</span></div>
-              <div class="item-card__likes">1350</div>
+          <section class="catalog__card">
+            <div class="catalog__photo">
+              <img src="img/photo-road.jpg" width="280" height="280" alt="Дорога в закате.">
             </div>
-          </div>
+            <h2 class="catalog__title">Неродные просторы</h2>
+            <p class="catalog__author">Автор фото: <span>Борис</span></p>
+            <div class="catalog__likes">
+              <a href="#"></a>
+              <span>1350</span>
+            </div>
+          </section>
 
-          <div class="catalog__item">
-            <div class="item-card">
-              <div class="photo item-card__photo">
-                <img src="./img/photo-2-mobile.jpg" width="280" height="280" alt="Кактус.">
-              </div>
-              <div class="item-card__title">Местная растительность</div>
-              <div class="item-card__author">Автор фото: <span>Сергей</span></div>
-              <div class="item-card__likes">143</div>
+          <section class="catalog__card">
+            <div class="catalog__photo">
+              <img src="img/photo-cactus.jpg" width="280" height="280" alt="Кактус.">
             </div>
-          </div>
+            <h2 class="catalog__title">Местная растительность</h2>
+            <p class="catalog__author">Автор фото: <span>Сергей</span></p>
+            <div class="catalog__likes">
+              <a href="#"></a>
+              <span>143</span>
+            </div>
+          </section>
 
-          <div class="catalog__item">
-            <div class="item-card">
-              <div class="photo item-card__photo">
-                <img src="./img/photo-3-mobile.jpg" width="280" height="280" alt="Извилистая дорога.">
-              </div>
-              <div class="item-card__title">Дорога на север</div>
-              <div class="item-card__author">Автор фото: <span>Петр</span></div>
-              <div class="item-card__likes">96</div>
+          <section class="catalog__card">
+            <div class="catalog__photo">
+              <img src="img/photo-mountain-road.jpg" width="280" height="280" alt="Извилистая дорога.">
             </div>
-          </div>
+            <h2 class="catalog__title">Дорога на север</h2>
+            <p class="catalog__author">Автор фото: <span>Петр</span></p>
+            <div class="catalog__likes">
+              <a href="#"></a>
+              <span>96</span>
+            </div>
+          </section>
 
-          <div class="catalog__item">
-            <div class="item-card">
-              <div class="photo item-card__photo">
-                <img src="./img/photo-4-mobile.jpg" width="280" height="280" alt="Скалистый мост.">
-              </div>
-              <div class="item-card__title">Мост дьявола</div>
-              <div class="item-card__author">Автор фото: <span>Антон</span></div>
-              <div class="item-card__likes">254</div>
+          <section class="catalog__card catalog__card--down">
+            <div class="catalog__photo">
+              <img src="img/photo-devils-bridge.jpg" width="280" height="280" alt="Скалистый мост.">
             </div>
-          </div>
+            <h2 class="catalog__title">Мост дьявола</h2>
+            <p class="catalog__author">Автор фото: <span>Антон</span></p>
+            <div class="catalog__likes">
+              <a href="#"></a>
+              <span>254</span>
+            </div>
+          </section>
         </div>
       </div>
 
@@ -108,38 +113,35 @@
           <p class="title video__title">Все еще сомневаетесь?</p>
           <p class="description video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
-        <div class="player video__player">
-          <div class="player__screen">
-            <img src="./img/player-screen.jpg" width="280" height="177" alt="Дорога в горах.">
-          </div>
+        <div class="video__player">
+          <img src="img/player-screen.jpg" width="280" height="177" alt="Дорога в горах.">
         </div>
       </div>
 
       <!-- Footer -->
 
       <footer class="main-footer">
-        <div class="main-footer__wrapper">
-          <div class="tag main-footer__tag">
-            <p class="tag__hashtag">#visitsedona</p>
-          </div>
+        <div class="main-footer__wrapper main-footer__wrapper--pt-big">
+          <p class="main-footer__tag">#visitsedona</p>
+
           <div class="social main-footer__social">
             <a class="social__link" href="https://vk.com/htmlacademy">
-              <img src="./img/vk-icon.svg" alt="Иконка Вконтакте">
+              <img src="img/vk-icon.svg" alt="Иконка Вконтакте">
             </a>
 
             <a class="social__link" href="https://t.me/htmlacademy">
-              <img src="./img/telegram-icon.svg" alt="Иконка Телеграм">
+              <img src="img/telegram-icon.svg" alt="Иконка Телеграм">
             </a>
 
             <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-              <img src="./img/youtube-icon.svg" alt="Иконка youtube">
+              <img src="img/youtube-icon.svg" alt="Иконка youtube">
             </a>
           </div>
 
-          <div class="copyright main-footer__copyright">
+          <div class="copyright">
             <span class="copyright__text">Разработано</span>
             <a class="copyright__link" href="https://htmlacademy.ru/">
-              <img src="./img/htmlacademy-logo.svg" alt="Иконка HTML Academy">
+              <img src="img/htmlacademy-logo.svg" alt="Иконка HTML Academy">
             </a>
           </div>
         </div>

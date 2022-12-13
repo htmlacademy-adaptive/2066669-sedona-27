@@ -1,0 +1,141 @@
+.feedback {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.feedback__wrapper {
+  padding: 0 20px;
+}
+
+.feedback__title {
+  text-align: center;
+  margin: 0 0 20px;
+  padding-top: 24px;
+}
+
+.feedback__item {
+  position: relative;
+  color: $gray;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: 0;
+
+  &:first-child {
+    &::before {
+      content: "";
+      position: absolute;
+      top: -70px;
+      left: -20px;
+      right: -20px;
+      display: block;
+      height: 1px;
+      background-color: $color-decoration-line;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: -20px;
+    right: -20px;
+    display: block;
+    height: 1px;
+    background-color: $color-decoration-line;
+  }
+
+  &:nth-last-child(1)::after,
+  &:nth-last-child(2)::after {
+    display: none;
+  }
+}
+
+.feedback__input-text {
+  margin-bottom: 16px;
+
+  &:last-child {
+    margin-bottom: 39px;
+  }
+}
+
+.feedback__email {
+  margin-bottom: 34px;
+}
+
+.feedback__radio {
+  position: relative;
+  display: block;
+  padding-left: 61px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 46px;
+  text-align: left;
+  margin-bottom: 16px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 46px;
+    height: 46px;
+    background-color: $color-input;
+    border: 15px solid $color-input;
+    border-radius: 50%;
+  }
+
+  &--mb {
+    margin-bottom: 24px;
+  }
+}
+
+.feedback__checkbox {
+  position: relative;
+  display: block;
+  padding-left: 63px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 46px;
+  text-align: left;
+  margin-bottom: 17px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 46px;
+    height: 46px;
+    background-color: $color-input;
+    border: none;
+    border-radius: 4px;
+  }
+
+  &--mb {
+    margin-bottom: 24px;
+  }
+}
+
+.feedback__button-area {
+  padding: 0;
+}
+
+.feedback__button {
+  padding: 16px 49px;
+  margin: 0 0 3px;
+  width: 280px;
+}
+
+.feedback__required {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $gray;
+  margin: 1px 0 24px;
+  text-align: end;
+}
+
+.feedback__text-area {
+  margin: 0 0 53px;
+}

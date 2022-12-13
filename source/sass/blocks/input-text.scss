@@ -1,0 +1,26 @@
+.input-text {
+  display: flex;
+  flex-direction: column;
+  border: none;
+
+  span {
+    text-align: left;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    padding-left: 16px;
+    text-transform: uppercase;
+  }
+
+  input {
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    flex-grow: 1;
+    padding: 16px;
+    border: none;
+    background-color: $color-input;
+  }
+}

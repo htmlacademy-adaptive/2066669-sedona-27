@@ -1,0 +1,27 @@
+.main-nav {
+  display: flex;
+  // display: block;
+  justify-content: flex-end;
+  position: relative;
+  align-items: center;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.main-nav__list {
+  background-color: $white;
+  width: 320px;
+  position: relative;
+}
+
+.main-nav__toggle {
+  display: none;
+  background-image: url("../img/toggle-icon.svg");
+  background-color: $white;
+  width: 23px;
+  height: 22px;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  margin: 17px 20px;
+}

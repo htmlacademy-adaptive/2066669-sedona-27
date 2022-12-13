@@ -1,0 +1,109 @@
+.advantages {
+  margin: 0;
+}
+
+.advantages__item {
+  text-align: center;
+  position: relative;
+  color: $white;
+  background-color: $blue;
+  padding: 38px 18px 37px;
+
+  &:first-child {
+    height: 210px;
+    padding: 55px 18px 40px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 100%;
+      background-image: url("../img/saw-second.svg");
+      position: absolute;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      top: -37px;
+      left: 0;
+      height: 57px;
+    }
+  }
+
+  &--gray {
+    color: $black;
+    background-color: $advantages-bg;
+    padding: 25px 32px 26px;
+  }
+
+  &--detail {
+    text-align: left;
+    position: relative;
+    color: $black;
+    background-color: $white;
+    padding: 35px 18px 0 65px;
+  }
+
+  &--pt-small {
+    padding-top: 33px;
+  }
+
+  &--pb-big {
+    padding-bottom: 46px;
+  }
+
+  &--photo {
+    padding: 0;
+  }
+}
+
+.advantages__logo {
+  position: absolute;
+  width: 40px;
+  left: 18px;
+  top: 26px;
+}
+
+.advantages__line {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    left: 18px;
+    right: 18px;
+    height: 1px;
+    background-color: $color-decoration-line;
+  }
+}
+
+.advantages__title {
+  margin: 0 0 10px 0;
+
+  &--more {
+    text-align: left;
+    margin-bottom: 16px;
+  }
+
+  &--mb {
+    margin-bottom: 16px;
+  }
+}
+
+.advantages__number {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0 0 17px 0;
+}
+
+.advantages__description {
+  margin: 0;
+
+  &--white {
+    color: $white;
+  }
+}
+
+.advantages__photo {
+  display: block;
+}

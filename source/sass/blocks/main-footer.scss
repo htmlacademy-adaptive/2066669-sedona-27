@@ -1,0 +1,25 @@
+.main-footer {
+  text-align: center;
+}
+
+.main-footer__wrapper {
+  padding-top: 9px;
+  padding-bottom: 23px;
+
+  &--pt-big {
+    padding-top: 28px;
+  }
+}
+
+.main-footer__tag {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: $black;
+  text-transform: uppercase;
+  margin: 0 0 33px;
+}
+
+.main-footer__social {
+  margin-bottom: 40px;
+}

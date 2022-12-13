@@ -1,0 +1,28 @@
+.page-title {
+  padding: 0 15px;
+  text-align: center;
+}
+
+.page-title__caption {
+  padding: 0 9px 0;
+  margin: 0 0 35px 0;
+
+  &--m-big {
+    margin: 37px 0 25px 0;
+  }
+}
+
+.page-title__description {
+  padding: 0;
+  margin: 0 0 32px 0;
+
+  &--m-big {
+    padding: 0;
+    margin: 0 0 37px 0;
+  }
+
+  &--m-small {
+    padding: 0;
+    margin: 0 0 28px 0;
+  }
+}
