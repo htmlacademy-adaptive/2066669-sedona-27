@@ -1,11 +1,6 @@
 .site-list {
+  @include clear-list;
   // display: none;
-  background-color: $white;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  width: 320px;
-  position: relative;
 }
 
 .site-list__item {

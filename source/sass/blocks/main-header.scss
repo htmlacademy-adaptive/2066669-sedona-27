@@ -1,9 +1,10 @@
 .main-header {
+  position: relative;
   width: 320px;
   margin: 0 auto;
   height: 56px;
   color: $black;
-  background-color: #ffffff;
+  background-color: $white;
 }
 
 .main-header__logo {
@@ -12,4 +13,5 @@
   top: 0;
   left: 50%;
   transform: translate(-50%, 0%);
+  z-index: 1;
 }

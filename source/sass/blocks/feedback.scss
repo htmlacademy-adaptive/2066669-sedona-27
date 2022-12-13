@@ -21,18 +21,6 @@
   padding: 0;
   border: 0;
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: -70px;
-  //   left: -20px;
-  //   right: -20px;
-  //   display: block;
-  //   // width: 100%;
-  //   height: 1px;
-  //   background-color: $color-decoration-line;
-  // }
-
   &:first-child {
     &::before {
       content: "";
@@ -41,7 +29,6 @@
       left: -20px;
       right: -20px;
       display: block;
-      // width: 100%;
       height: 1px;
       background-color: $color-decoration-line;
     }
@@ -50,11 +37,9 @@
   &::after {
     content: "";
     position: absolute;
-    // top: -54px;
     left: -20px;
     right: -20px;
     display: block;
-    // width: 100%;
     height: 1px;
     background-color: $color-decoration-line;
   }
