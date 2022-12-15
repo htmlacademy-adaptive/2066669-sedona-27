@@ -1,0 +1,25 @@
+.checkbox {
+  position: relative;
+  display: block;
+  padding-left: 63px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 46px;
+  text-align: left;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 46px;
+    height: 46px;
+    background-color: $color-input;
+    border: none;
+    border-radius: 4px;
+  }
+}
+
+.checkbox__input {
+  display: none;
+}

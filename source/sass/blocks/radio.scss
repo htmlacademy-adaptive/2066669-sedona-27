@@ -1,0 +1,25 @@
+.radio {
+  position: relative;
+  display: block;
+  padding-left: 61px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 46px;
+  text-align: left;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    width: 46px;
+    height: 46px;
+    background-color: $color-input;
+    border: 15px solid $color-input;
+    border-radius: 50%;
+  }
+}
+
+.radio__input {
+  display: none;
+}

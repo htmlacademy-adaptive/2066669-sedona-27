@@ -13,8 +13,16 @@
   width: 284px;
   padding-top: 16px;
   padding-bottom: 16px;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }
 
 .find-hotel__description {
   margin: 22px 0 31px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 166px;
+  }
 }

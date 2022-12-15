@@ -6,12 +6,23 @@
   align-items: center;
   margin: 0 auto;
   z-index: 1;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    position: static;
+  }
 }
 
 .main-nav__list {
   background-color: $white;
   width: 320px;
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    display: grid;
+    grid-template-columns: 153px 153px 153px 153px 153px;
+  }
 }
 
 .main-nav__toggle {
@@ -24,4 +35,30 @@
   border: none;
   cursor: pointer;
   margin: 17px 20px;
+}
+
+.main-nav__item {
+  &--index {
+    @media (min-width: $tablet-width) {
+      grid-column: 1/2;
+    }
+  }
+
+  &--catalog {
+    @media (min-width: $tablet-width) {
+      grid-column: 2/3;
+    }
+  }
+
+  &--form {
+    @media (min-width: $tablet-width) {
+      grid-column: 4/5;
+    }
+  }
+
+  &--academy {
+    @media (min-width: $tablet-width) {
+      grid-column: 5/6;
+    }
+  }
 }

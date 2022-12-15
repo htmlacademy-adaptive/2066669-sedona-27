@@ -1,5 +1,6 @@
 @import "fonts.scss";
 @import "variables.scss";
+@import "viewports.scss";
 @import "common.scss";
 @import "mixins.scss";
 @import "blocks/title.scss";
@@ -7,7 +8,8 @@
 @import "blocks/input-text.scss";
 @import "blocks/site-list.scss";
 @import "blocks/social.scss";
-@import "blocks/choice.scss";
+@import "blocks/radio.scss";
+@import "blocks/checkbox.scss";
 @import "blocks/text-area.scss";
 @import "blocks/page.scss";
 @import "blocks/main-header.scss";

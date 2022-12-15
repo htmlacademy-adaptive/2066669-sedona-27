@@ -1,6 +1,10 @@
 .main-container {
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
 }
 
 .main-container__logo {
@@ -15,6 +19,10 @@
   img {
     display: block;
     margin: 0 auto;
+
+    @media (min-width: $tablet-width) {
+      width: 457px;
+    }
   }
 
   &::after {
@@ -40,12 +48,26 @@
       display: block;
       width: 100%;
       background-image: url("../img/saw.svg");
-      position: relative;
+      position: absolute;
       background-position: bottom;
       background-repeat: no-repeat;
       left: 0;
       height: 57px;
-      bottom: -10px;
+      bottom: -1px;
     }
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/back-tablet.jpg");
+      padding: 95px 0 117px;
+      margin-bottom: 66px;
+    }
+  }
+}
+
+.main-container__img {
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 461px;
   }
 }
