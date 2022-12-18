@@ -5,6 +5,7 @@
   @media (min-width: $tablet-width) {
     width: 100%;
     padding: 0 60px;
+    margin-bottom: 74px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -14,6 +15,42 @@
   text-align: center;
   margin: 0 0 20px;
   padding-top: 24px;
+
+  &--decorline {
+    @media (min-width: $tablet-width) {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 36px;
+        left: 0;
+        width: 123px;
+        display: block;
+        height: 1px;
+        background-color: $color-decoration-column;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 36px;
+        right: 0;
+        width: 123px;
+        display: block;
+        height: 1px;
+        background-color: $color-decoration-column;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      width: 280px;
+    }
+
+    &::after {
+      width: 280px;
+    }
+  }
 }
 
 .feedback__item {
@@ -60,8 +97,60 @@
     display: none;
   }
 
+  &--last {
+    @media (min-width: $desktop-width) {
+      padding: 0 216px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
-    width: 324px;
+    width: 100%;
+
+    &--rcolumn {
+      width: 50%;
+      padding-right: 43px;
+      border-right: solid 1px $color-decoration-column;
+      margin-bottom: 39px;
+    }
+
+    &--lcolumn {
+      width: 50%;
+      padding-left: 43px;
+    }
+
+    &--row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 36px;
+    }
+
+    &--check {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding: 0 84px;
+
+      @media (min-width: $desktop-width) {
+        padding: 0 22px;
+      }
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+
+    &--rcolumn {
+      width: 50%;
+      padding-left: 60px;
+      padding-right: 63px;
+    }
+
+    &--lcolumn {
+      width: 50%;
+      padding-right: 60px;
+      padding-left: 63px;
+    }
   }
 }
 
@@ -70,6 +159,10 @@
 
   &:last-child {
     margin-bottom: 39px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 15px;
+    }
   }
 }
 
@@ -78,14 +171,22 @@
 }
 
 .feedback__checkbox {
+  width: 224px;
   margin-bottom: 17px;
 
   &--mb {
     margin-bottom: 24px;
   }
+
+  @media (min-width: $tablet-width) {
+    &--mr {
+      margin-right: 32px;
+    }
+  }
 }
 
 .feedback__radio {
+  width: 280px;
   margin-bottom: 16px;
 
   &--mb {
@@ -95,6 +196,17 @@
 
 .feedback__button-area {
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 216px;
+  }
 }
 
 .feedback__button {
@@ -111,8 +223,17 @@
   color: $gray;
   margin: 1px 0 24px;
   text-align: end;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .feedback__text-area {
   margin: 0 0 53px;
+
+  @media (min-width: $tablet-width) {
+    height: 160px;
+    margin: 0 0 48px;
+  }
 }

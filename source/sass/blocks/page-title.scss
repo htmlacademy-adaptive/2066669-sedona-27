@@ -28,6 +28,10 @@
       padding: 0 150px;
       margin: 0 0 67px 0;
     }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 372px;
+    }
   }
 
   &--m-small {
@@ -36,6 +40,10 @@
 
     @media (min-width: $tablet-width) {
       padding: 0 150px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 365px;
     }
   }
 }

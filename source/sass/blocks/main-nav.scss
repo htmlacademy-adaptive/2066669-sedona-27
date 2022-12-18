@@ -23,6 +23,11 @@
     display: grid;
     grid-template-columns: 153px 153px 153px 153px 153px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+    grid-template-columns: 240px 240px 240px 240px 240px;
+  }
 }
 
 .main-nav__toggle {

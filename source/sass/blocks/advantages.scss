@@ -31,12 +31,28 @@
       left: 0;
       height: 57px;
     }
+
+    @media (min-width: $tablet-width) {
+      position: static;
+      width: 256px;
+      padding: 52px 33px 17px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+      padding: 52px 60px 17px;
+    }
   }
 
   &--blue {
     @media (min-width: $tablet-width) {
       width: 256px;
       padding: 52px 33px 31px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+      padding: 52px 60px 17px;
     }
   }
 
@@ -48,6 +64,11 @@
     @media (min-width: $tablet-width) {
       width: 256px;
       padding: 52px 33px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+      padding: 70px 33px;
     }
   }
 
@@ -66,6 +87,11 @@
       padding: 60px 33px;
       text-align: center;
     }
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+      padding: 92px 33px;
+    }
   }
 
   &--pt-small {
@@ -73,6 +99,10 @@
 
     @media (min-width: $tablet-width) {
       padding-top: 60px;
+    }
+
+    @media (min-width: $tablet-width) {
+      padding-top: 92px;
     }
   }
 
@@ -86,15 +116,9 @@
     @media (min-width: $tablet-width) {
       width: 512px;
     }
-  }
 
-  @media (min-width: $tablet-width) {
-    position: static;
-
-    &:first-child {
-      position: static;
-      width: 256px;
-      padding: 52px 33px 17px;
+    @media (min-width: $desktop-width) {
+      width: 800px;
     }
   }
 }
@@ -162,4 +186,34 @@
 
 .advantages__photo {
   display: block;
+
+  &--mobile {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: $desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: $desktop-width) {
+      display: block;
+    }
+  }
 }
