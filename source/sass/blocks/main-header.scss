@@ -5,6 +5,14 @@
   height: 56px;
   color: $black;
   background-color: $white;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .main-header__logo {

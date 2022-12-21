@@ -1,5 +1,25 @@
 .catalog {
   width: 320px;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
+}
+
+.catalog__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .catalog__card {
@@ -15,6 +35,10 @@
     width: 100%;
     height: 1px;
     background-color: $color-decoration-line;
+
+    @media (min-width: $tablet-width) {
+      content: normal;
+    }
   }
 
   &--down:last-child {
@@ -27,15 +51,52 @@
       width: 100%;
       height: 1px;
       background-color: $color-decoration-line;
+
+      @media (min-width: $tablet-width) {
+        content: normal;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    width: 324px;
+
+    &:first-child {
+      width: 648px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    width: 400px;
+
+    &:first-child {
+      width: 1200px;
     }
   }
 }
 
 .catalog__photo {
   display: block;
+  margin-bottom: 10px;
+}
 
-  img {
-    margin-bottom: 11px;
+.catalog__description {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $color-input;
+    padding: 22px 20px 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: $white;
   }
 }
 
@@ -56,6 +117,14 @@
   line-height: 21px;
   margin-bottom: 11px;
   color: $gray;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    color: $white;
+  }
 }
 
 .catalog__likes {
@@ -69,6 +138,10 @@
     width: 23px;
     height: 21px;
     margin-right: 14px;
+
+    @media (min-width: $desktop-width) {
+      background-image: url("../img/like-icon-white.svg");
+    }
   }
 
   span {
@@ -76,5 +149,9 @@
     font-size: 14px;
     line-height: 21px;
     color: $black;
+
+    @media (min-width: $desktop-width) {
+      color: $white;
+    }
   }
 }

@@ -9,6 +9,13 @@
   &--pt-big {
     padding-top: 28px;
   }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 26px 0 36px;
+  }
 }
 
 .main-footer__tag {
@@ -18,8 +25,16 @@
   color: $black;
   text-transform: uppercase;
   margin: 0 0 33px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }
 
 .main-footer__social {
   margin-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 }

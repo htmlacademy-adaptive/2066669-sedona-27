@@ -10,6 +10,10 @@
   &--m-big {
     margin: 37px 0 25px 0;
   }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 110px 0;
+  }
 }
 
 .page-title__description {
@@ -19,10 +23,27 @@
   &--m-big {
     padding: 0;
     margin: 0 0 37px 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 150px;
+      margin: 0 0 67px 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 372px;
+    }
   }
 
   &--m-small {
     padding: 0;
     margin: 0 0 28px 0;
+
+    @media (min-width: $tablet-width) {
+      padding: 0 150px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0 365px;
+    }
   }
 }

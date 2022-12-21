@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -17,16 +18,16 @@
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+            <li class="site-list__item main-nav__item--index">
               <a class="site-list__link" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item site-list__item--active main-nav__item--catalog">
               <a class="site-list__link" href="#">Фото и видео</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item main-nav__item--form">
               <a class="site-list__link" href="form.html">Форма Отзыва</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item main-nav__item--academy">
               <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
@@ -39,7 +40,7 @@
     <main class="main-container">
       <div class="main-container__logo main-container__logo--other">
         <h1 class="visually-hidden">Седона.</h1>
-        <img src="img/sedona-logo.svg" width="229" height="39" alt="Альтернативный логотип Седоны.">
+        <img class="main-container__img" src="img/sedona-logo.svg" width="229" height="39" alt="Альтернативный логотип Седоны.">
       </div>
 
       <!-- Page title -->
@@ -56,50 +57,62 @@
       <div class="catalog">
         <div class="catalog__wrapper">
           <section class="catalog__card">
-            <div class="catalog__photo">
-              <img src="img/photo-road.jpg" width="280" height="280" alt="Дорога в закате.">
-            </div>
-            <h2 class="catalog__title">Неродные просторы</h2>
-            <p class="catalog__author">Автор фото: <span>Борис</span></p>
-            <div class="catalog__likes">
-              <a href="#"></a>
-              <span>1350</span>
+            <img class="catalog__photo catalog__photo--mobile" src="img/photo-road.jpg" width="280" height="280" alt="Дорога в закате.">
+            <div class="catalog__description">
+              <div class="catalog__info">
+                <h2 class="catalog__title">Неродные просторы</h2>
+                <p class="catalog__author">Автор фото: <span>Борис</span></p>
+              </div>
+
+              <div class="catalog__likes">
+                <a href="#"></a>
+                <span>1350</span>
+              </div>
             </div>
           </section>
 
           <section class="catalog__card">
-            <div class="catalog__photo">
-              <img src="img/photo-cactus.jpg" width="280" height="280" alt="Кактус.">
-            </div>
-            <h2 class="catalog__title">Местная растительность</h2>
-            <p class="catalog__author">Автор фото: <span>Сергей</span></p>
-            <div class="catalog__likes">
-              <a href="#"></a>
-              <span>143</span>
+            <img class="catalog__photo" src="img/photo-cactus.jpg" width="280" height="280" alt="Кактус.">
+            <div class="catalog__description">
+              <div class="catalog__info">
+                <h2 class="catalog__title">Местная растительность</h2>
+                <p class="catalog__author">Автор фото: <span>Сергей</span></p>
+              </div>
+
+              <div class="catalog__likes">
+                <a href="#"></a>
+                <span>143</span>
+              </div>
             </div>
           </section>
 
           <section class="catalog__card">
-            <div class="catalog__photo">
-              <img src="img/photo-mountain-road.jpg" width="280" height="280" alt="Извилистая дорога.">
-            </div>
-            <h2 class="catalog__title">Дорога на север</h2>
-            <p class="catalog__author">Автор фото: <span>Петр</span></p>
-            <div class="catalog__likes">
-              <a href="#"></a>
-              <span>96</span>
+            <img class="catalog__photo" src="img/photo-mountain-road.jpg" width="280" height="280" alt="Извилистая дорога.">
+            <div class="catalog__description">
+              <div class="catalog__info">
+                <h2 class="catalog__title">Дорога на север</h2>
+                <p class="catalog__author">Автор фото: <span>Петр</span></p>
+              </div>
+
+              <div class="catalog__likes">
+                <a href="#"></a>
+                <span>96</span>
+              </div>
             </div>
           </section>
 
           <section class="catalog__card catalog__card--down">
-            <div class="catalog__photo">
-              <img src="img/photo-devils-bridge.jpg" width="280" height="280" alt="Скалистый мост.">
-            </div>
-            <h2 class="catalog__title">Мост дьявола</h2>
-            <p class="catalog__author">Автор фото: <span>Антон</span></p>
-            <div class="catalog__likes">
-              <a href="#"></a>
-              <span>254</span>
+            <img class="catalog__photo" src="img/photo-devils-bridge.jpg" width="280" height="280" alt="Скалистый мост.">
+            <div class="catalog__description">
+              <div class="catalog__info">
+                <h2 class="catalog__title">Мост дьявола</h2>
+                <p class="catalog__author">Автор фото: <span>Антон</span></p>
+              </div>
+
+              <div class="catalog__likes">
+                <a href="#"></a>
+                <span>254</span>
+              </div>
             </div>
           </section>
         </div>
@@ -111,7 +124,7 @@
         <div class="video__wrapper">
           <h2 class="visually-hidden">Блок с видео.</h2>
           <p class="title video__title">Все еще сомневаетесь?</p>
-          <p class="description video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+          <p class="description video__description video__description--mb">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
         <div class="video__player">
           <img src="img/player-screen.jpg" width="280" height="177" alt="Дорога в горах.">
