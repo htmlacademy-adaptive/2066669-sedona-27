@@ -35,6 +35,8 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/back-tablet.jpg");
+    padding: 77px 0 97px;
+    margin-bottom: 46px;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,7 +45,7 @@
   }
 
   &--other {
-    padding: 52px 0 10px;
+    padding: 52px 0 67px;
     background-image: url("../img/background-catalog.jpg");
     background-position: bottom;
 

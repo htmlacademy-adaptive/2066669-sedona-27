@@ -71,7 +71,17 @@
 
     @media (min-width: $desktop-width) {
       width: 400px;
-      padding: 70px 33px;
+      padding: 63px 33px;
+    }
+  }
+
+  &--specific {
+    @media (min-width: $tablet-width) {
+      padding: 44px 48px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 52px 33px;
     }
   }
 
@@ -151,8 +161,8 @@
       background-size: 100%;
 
       @media (min-width: $tablet-width) {
-        top: 60px;
-        left: 88px;
+        top: 62px;
+        left: 91px;
         width: 78px;
         height: 75px;
       }
@@ -181,13 +191,37 @@
 
   &--photo {
     padding: 0;
+    height: 260px;
+    background-image: url("../img/real-city.jpg");
+    background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       width: 512px;
+      height: 256px;
+      background-image: url("../img/real-city-tablet.jpg");
     }
 
     @media (min-width: $desktop-width) {
       width: 800px;
+      background-image: url("../img/real-city-desktop.jpg");
+    }
+  }
+
+  &--photo-bridge {
+    padding: 0;
+    height: 260px;
+    background-image: url("../img/devils-bridge.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 512px;
+      height: 256px;
+      background-image: url("../img/photo-devils-bridge-tablet.jpg");
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 800px;
+      background-image: url("../img/photo-devils-bridge-desktop.jpg");
     }
   }
 }
@@ -224,12 +258,14 @@
 
     @media (min-width: $tablet-width) {
       margin-top: 98px;
+      margin-bottom: 22px;
     }
   }
 
   &--gray {
     @media (min-width: $tablet-width) {
       padding: 0 30px;
+      margin-bottom: 16px;
     }
   }
 }
@@ -239,6 +275,18 @@
   font-size: 14px;
   line-height: 21px;
   margin: 0 0 17px 0;
+
+  &--mb-big {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 27px;
+    }
+  }
+
+  &--gray {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 21px;
+    }
+  }
 }
 
 .advantages__description {

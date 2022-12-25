@@ -23,3 +23,19 @@
 .radio__input {
   display: none;
 }
+
+.radio__input:checked[type="radio"]:checked ~ .radio__point {
+  background-color: $gray;
+  border-radius: 50%;
+}
+
+.radio__point {
+  content: "";
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  display: block;
+  width: 16px;
+  height: 16px;
+  border: none;
+}

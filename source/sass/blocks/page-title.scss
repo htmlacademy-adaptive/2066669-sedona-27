@@ -13,12 +13,21 @@
 
   @media (min-width: $tablet-width) {
     padding: 0 110px 0;
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
   }
 }
 
 .page-title__description {
   padding: 0;
   margin: 0 0 32px 0;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 55px;
+  }
 
   &--m-big {
     padding: 0;

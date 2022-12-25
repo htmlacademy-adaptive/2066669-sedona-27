@@ -14,7 +14,7 @@
       <a class="main-header__logo" href="index.html">
         <img src="img/header-logo.svg" width="185" height="96" alt="Маленький логотип Седоны">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -57,7 +57,9 @@
       <div class="catalog">
         <div class="catalog__wrapper">
           <section class="catalog__card">
-            <img class="catalog__photo catalog__photo--mobile" src="img/photo-road.jpg" width="280" height="280" alt="Дорога в закате.">
+            <span class="catalog__photo catalog__photo--road">
+              <h2 class="visually-hidden">Дорога в закате.</h2>
+            </span>
             <div class="catalog__description">
               <div class="catalog__info">
                 <h2 class="catalog__title">Неродные просторы</h2>
@@ -72,7 +74,9 @@
           </section>
 
           <section class="catalog__card">
-            <img class="catalog__photo" src="img/photo-cactus.jpg" width="280" height="280" alt="Кактус.">
+            <span class="catalog__photo catalog__photo--cactus">
+              <h2 class="visually-hidden">Кактус.</h2>
+            </span>
             <div class="catalog__description">
               <div class="catalog__info">
                 <h2 class="catalog__title">Местная растительность</h2>
@@ -87,7 +91,9 @@
           </section>
 
           <section class="catalog__card">
-            <img class="catalog__photo" src="img/photo-mountain-road.jpg" width="280" height="280" alt="Извилистая дорога.">
+            <span class="catalog__photo catalog__photo--mountain-road">
+              <h2 class="visually-hidden">Извилистая дорога.</h2>
+            </span>
             <div class="catalog__description">
               <div class="catalog__info">
                 <h2 class="catalog__title">Дорога на север</h2>
@@ -102,7 +108,9 @@
           </section>
 
           <section class="catalog__card catalog__card--down">
-            <img class="catalog__photo" src="img/photo-devils-bridge.jpg" width="280" height="280" alt="Скалистый мост.">
+            <span class="catalog__photo catalog__photo--bridge">
+              <h2 class="visually-hidden">Скалистый мост.</h2>
+            </span>
             <div class="catalog__description">
               <div class="catalog__info">
                 <h2 class="catalog__title">Мост дьявола</h2>
@@ -160,5 +168,7 @@
         </div>
       </footer>
     </main>
+
+    <script src="sass/script.js"></script>
   </body>
 </html>
