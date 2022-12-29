@@ -18,6 +18,15 @@
 
 .video__title {
   margin: 0 0 27px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    margin: 0 0 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 34px;
+  }
 }
 
 .video__description {
@@ -25,12 +34,14 @@
 
   &--mb {
     @media (min-width: $tablet-width) {
-      margin-bottom: 66px;
+      margin-bottom: 89px;
     }
   }
 }
 
 .video__player {
+  position: relative;
+
   img {
     display: block;
     margin: 0 auto;
@@ -45,4 +56,16 @@
     margin-bottom: 40px;
     padding: 0 60px;
   }
+}
+
+.video__button {
+  position: absolute;
+  width: 48px;
+  height: 54px;
+  border: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  background-image: url("../img/play-btn.svg");
 }

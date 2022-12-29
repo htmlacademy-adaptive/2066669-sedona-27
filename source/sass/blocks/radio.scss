@@ -1,10 +1,11 @@
 .radio {
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
   padding-left: 61px;
   font-weight: 700;
   font-size: 18px;
-  line-height: 46px;
+  line-height: 26px;
   text-align: left;
 
   &::before {
@@ -33,7 +34,7 @@
   content: "";
   position: absolute;
   left: 15px;
-  top: 15px;
+  top: 5px;
   display: block;
   width: 16px;
   height: 16px;
