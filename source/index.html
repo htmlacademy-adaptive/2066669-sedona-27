@@ -14,14 +14,14 @@
       <a class="main-header__logo" href="index.html">
         <img src="img/header-logo.svg" width="185" height="96" alt="Маленький логотип Седоны">
       </a>
-      <nav class="main-nav">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item main-nav__item--index">
+            <li class="site-list__item site-list__item--active main-nav__item--index">
               <a class="site-list__link" href="#">Главная</a>
             </li>
-            <li class="site-list__item site-list__item--active main-nav__item--catalog">
+            <li class="site-list__item main-nav__item--catalog">
               <a class="site-list__link" href="catalog.html">Фото и видео</a>
             </li>
             <li class="site-list__item main-nav__item--form">
@@ -58,12 +58,12 @@
         <div class="advantages__wrapper">
           <div class="advantages__item">
             <h3 class="title advantages__title">Настоящий городок</h3>
-            <div class="advantages__number">— №1 —</div>
+            <div class="advantages__number advantages__number--mb-big">— №1 —</div>
             <p class="description advantages__description advantages__description--white">Седона не аттракцион для туристов, там течёт своя жизнь</p>
           </div>
 
           <div class="advantages__item advantages__item--photo">
-            <img class="advantages__photo" src="img/real-city.jpg" width="320" height="260" alt="Торговый центр Седоны.">
+            <h3 class="visually-hidden">Торговый центр Седоны.</h3>
           </div>
 
           <div class="advantages__item advantages__item--detail advantages__item--detail-house advantages__item--pt-small">
@@ -87,25 +87,25 @@
             <p class="description advantages__description advantages__description--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
 
-          <div class="advantages__item advantages__item--photo">
-            <img class="advantages__photo" src="img/devils-bridge.jpg" width="320" height="260" alt="Скалистый мост.">
+          <div class="advantages__item advantages__item--photo-bridge">
+            <h3 class="visually-hidden">Скалистый мост.</h3>
           </div>
 
           <div class="advantages__item advantages__item--gray advantages__line">
             <h3 class="title advantages__title advantages__title--gray">Небольшая площадь</h3>
-            <div class="advantages__number">— №3 —</div>
+            <div class="advantages__number advantages__number--gray">— №3 —</div>
             <p class="description advantages__description">Все интересные места находятся очень близко</p>
           </div>
 
-          <div class="advantages__item advantages__item--gray advantages__line">
+          <div class="advantages__item advantages__item--gray advantages__item--specific advantages__line">
             <h3 class="title advantages__title advantages__title--gray">Красивая дорога</h3>
             <div class="advantages__number">— №4 —</div>
-            <p class="description advantages__description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            <p class="description advantages__description advantages__description--m-big">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
 
           <div class="advantages__item advantages__item--gray">
             <h3 class="title advantages__title advantages__title--gray">Мало туристов</h3>
-            <div class="advantages__number">— №5 —</div>
+            <div class="advantages__number advantages__number--gray">— №5 —</div>
             <p class="description advantages__description">Большинство едет в гранд каньон и толпится там</p>
           </div>
         </div>
@@ -156,5 +156,7 @@
         </div>
       </footer>
     </main>
+
+    <script src="sass/script.js"></script>
   </body>
 </html>

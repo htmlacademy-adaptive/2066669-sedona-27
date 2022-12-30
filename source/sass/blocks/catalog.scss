@@ -79,8 +79,82 @@
 
 .catalog__photo {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+
+  &--road {
+    height: 280px;
+    background-image: url("../img/photo-road.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 648px;
+      height: 400px;
+      background-image: url("../img/photo-road-tablet.jpg");
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 1200px;
+      background-image: url("../img/photo-road-desktop.jpg");
+    }
+  }
+
+  &--cactus {
+    height: 280px;
+    background-image: url("../img/photo-cactus.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 324px;
+      height: 267px;
+      background-image: url("../img/photo-cactus-tablet.jpg");
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+      background-image: url("../img/photo-cactus-desktop.jpg");
+    }
+  }
+
+  &--mountain-road {
+    height: 280px;
+    background-image: url("../img/photo-mountain-road.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 324px;
+      height: 267px;
+      background-image: url("../img/photo-mountain-road-tablet.jpg");
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+      background-image: url("../img/photo-mountain-road-desktop.jpg");
+    }
+  }
+
+  &--bridge {
+    height: 280px;
+    background-image: url("../img/photo-devils-bridge.jpg");
+    background-repeat: no-repeat;
+
+    @media (min-width: $tablet-width) {
+      width: 324px;
+      height: 267px;
+      background-image: url("../img/photo-catalog-bridge-tablet.jpg");
+      margin: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 400px;
+      height: 267px;
+      background-image: url("../img/photo-catalog-bridge-desktop.jpg");
+    }
+  }
 }
+
 
 .catalog__description {
   @media (min-width: $tablet-width) {
@@ -88,7 +162,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: $color-input;
-    padding: 22px 20px 15px;
+    padding: 23px 20px 15px;
   }
 
   @media (min-width: $desktop-width) {
@@ -97,6 +171,14 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     color: $white;
+    padding: 19px 20px 14px;
+  }
+}
+
+.catalog__info {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+    margin-left: 6px;
   }
 }
 
@@ -129,7 +211,7 @@
 
 .catalog__likes {
   display: flex;
-  align-items: baseline;
+  align-items: center;
 
   a {
     display: block;
@@ -138,6 +220,11 @@
     width: 23px;
     height: 21px;
     margin-right: 14px;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 10px;
+      margin-bottom: 8px;
+    }
 
     @media (min-width: $desktop-width) {
       background-image: url("../img/like-icon-white.svg");
