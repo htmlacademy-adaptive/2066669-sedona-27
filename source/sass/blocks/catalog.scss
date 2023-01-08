@@ -81,77 +81,8 @@
   display: block;
   margin-bottom: 15px;
 
-  &--road {
-    height: 280px;
-    background-image: url("../img/photo-road.jpg");
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      width: 648px;
-      height: 400px;
-      background-image: url("../img/photo-road-tablet.jpg");
-      margin: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 1200px;
-      background-image: url("../img/photo-road-desktop.jpg");
-    }
-  }
-
-  &--cactus {
-    height: 280px;
-    background-image: url("../img/photo-cactus.jpg");
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      width: 324px;
-      height: 267px;
-      background-image: url("../img/photo-cactus-tablet.jpg");
-      margin: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 400px;
-      background-image: url("../img/photo-cactus-desktop.jpg");
-    }
-  }
-
-  &--mountain-road {
-    height: 280px;
-    background-image: url("../img/photo-mountain-road.jpg");
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      width: 324px;
-      height: 267px;
-      background-image: url("../img/photo-mountain-road-tablet.jpg");
-      margin: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 400px;
-      background-image: url("../img/photo-mountain-road-desktop.jpg");
-    }
-  }
-
-  &--bridge {
-    height: 280px;
-    background-image: url("../img/photo-devils-bridge.jpg");
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      width: 324px;
-      height: 267px;
-      background-image: url("../img/photo-catalog-bridge-tablet.jpg");
-      margin: 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      width: 400px;
-      height: 267px;
-      background-image: url("../img/photo-catalog-bridge-desktop.jpg");
-    }
+  @media (min-width: $tablet-width) {
+    margin: 0;
   }
 }
 

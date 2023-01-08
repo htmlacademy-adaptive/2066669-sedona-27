@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -57,9 +58,12 @@
       <div class="catalog">
         <div class="catalog__wrapper">
           <section class="catalog__card">
-            <span class="catalog__photo catalog__photo--road">
-              <h2 class="visually-hidden">Дорога в закате.</h2>
-            </span>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-road-desktop.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-road-tablet.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+              <img class="catalog__photo" src="img/photo-road.jpg" srcset="img/photo-road@2x.jpg 2x" alt="Дорога в закате.">
+            </picture>
+
             <div class="catalog__description">
               <div class="catalog__info">
                 <h2 class="catalog__title">Неродные просторы</h2>
@@ -74,9 +78,12 @@
           </section>
 
           <section class="catalog__card">
-            <span class="catalog__photo catalog__photo--cactus">
-              <h2 class="visually-hidden">Кактус.</h2>
-            </span>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+              <img class="catalog__photo" src="img/photo-cactus.jpg" srcset="img/photo-cactus@2x.jpg 2x" alt="Кактус.">
+            </picture>
+
             <div class="catalog__description">
               <div class="catalog__info">
                 <h2 class="catalog__title">Местная растительность</h2>
@@ -91,9 +98,12 @@
           </section>
 
           <section class="catalog__card">
-            <span class="catalog__photo catalog__photo--mountain-road">
-              <h2 class="visually-hidden">Извилистая дорога.</h2>
-            </span>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-mountain-road-desktop.jpg 1x, img/photo-mountain-road-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-mountain-road-tablet.jpg 1x, img/photo-mountain-road-tablet@2x.jpg 2x">
+              <img class="catalog__photo" src="img/photo-mountain-road.jpg" srcset="img/photo-mountain-road@2x.jpg 2x" alt="Извилистая дорога.">
+            </picture>
+
             <div class="catalog__description">
               <div class="catalog__info">
                 <h2 class="catalog__title">Дорога на север</h2>
@@ -108,9 +118,12 @@
           </section>
 
           <section class="catalog__card catalog__card--down">
-            <span class="catalog__photo catalog__photo--bridge">
-              <h2 class="visually-hidden">Скалистый мост.</h2>
-            </span>
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/photo-catalog-bridge-desktop.jpg 1x, img/photo-catalog-bridge-desktop@2x.jpg 2x"">
+              <source media="(min-width: 768px)" srcset="img/photo-catalog-bridge-tablet.jpg 1x, img/photo-catalog-bridge-tablet@2x.jpg 2x"">
+              <img class="catalog__photo" src="img/photo-devils-bridge.jpg" srcset="img/photo-devils-bridge@2x.jpg 2x" alt="Скалистый мост.">
+            </picture>
+
             <div class="catalog__description">
               <div class="catalog__info">
                 <h2 class="catalog__title">Мост дьявола</h2>
