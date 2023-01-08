@@ -150,7 +150,7 @@
         top: 60px;
         left: 88px;
         width: 77px;
-        height: 72px;
+        height: 71px;
       }
 
       @media (min-width: $desktop-width) {
@@ -206,16 +206,31 @@
     background-image: url("../img/real-city.jpg");
     background-repeat: no-repeat;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/real-city@2x.jpg");
+      background-size: 320px 280px;
+    }
+
     @media (min-width: $tablet-width) {
       width: 512px;
       height: 256px;
       background-image: url("../img/real-city-tablet.jpg");
       order: 2;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/real-city-tablet@2x.jpg");
+        background-size: 512px 256px;
+      }
     }
 
     @media (min-width: $desktop-width) {
       width: 800px;
       background-image: url("../img/real-city-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/real-city-desktop@2x.jpg");
+        background-size: 800px 256px;
+      }
     }
   }
 
@@ -225,16 +240,31 @@
     background-image: url("../img/devils-bridge.jpg");
     background-repeat: no-repeat;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/devils-bridge@2x.jpg");
+      background-size: 320px 280px;
+    }
+
     @media (min-width: $tablet-width) {
       width: 512px;
       height: 256px;
       background-image: url("../img/photo-devils-bridge-tablet.jpg");
       order: 5;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/photo-devils-bridge-tablet@2x.jpg");
+        background-size: 512px 256px;
+      }
     }
 
     @media (min-width: $desktop-width) {
       width: 800px;
       background-image: url("../img/photo-devils-bridge-desktop.jpg");
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/photo-devils-bridge-desktop@2x.jpg");
+        background-size: 800px 256px;
+      }
     }
   }
 }
