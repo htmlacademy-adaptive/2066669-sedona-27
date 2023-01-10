@@ -15,7 +15,7 @@
       <a class="main-header__logo" href="index.html">
         <img src="img/header-logo.svg" width="185" height="96" alt="Маленький логотип Седоны">
       </a>
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -41,7 +41,10 @@
     <main class="main-container">
       <div class="main-container__logo main-container__logo--other main-container__logo--form">
         <h1 class="visually-hidden">Седона.</h1>
-        <img class="main-container__img" src="img/sedona-logo.svg" width="229" height="39" alt="Альтернативный логотип Седоны.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/sedona-logo-desktop.svg 1x, img/sedona-logo-desktop@2x.svg 2x">
+          <img class="main-container__img" src="img/sedona-logo.svg" width="229" height="39" alt="Альтернативный логотип Седоны.">
+        </picture>
       </div>
 
       <!-- Page title -->
@@ -49,7 +52,7 @@
       <div class="page-title">
         <div class="page-title__wrapper">
           <h2 class="title page-title__caption page-title__caption--m-big page-title__caption--form">Оставьте свой отзыв</h2>
-          <p class="description page-title__description page-title__description--m-small">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+          <p class="description description__form page-title__description page-title__description--m-small">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         </div>
       </div>
 
@@ -162,26 +165,33 @@
         <div class="main-footer__wrapper main-footer__wrapper--pt-big main-footer__wrapper--form">
           <p class="main-footer__tag main-footer__tag--form">#visitsedona</p>
 
-          <div class="social main-footer__social">
+          <div class="social main-footer__social main-footer__social--form">
             <a class="social__link" href="https://vk.com/htmlacademy">
-              <img src="img/vk-icon.svg" alt="Иконка Вконтакте">
+              <svg class="main-footer__social-icon" width="48" height="48">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
             </a>
 
             <a class="social__link" href="https://t.me/htmlacademy">
-              <img src="img/telegram-icon.svg" alt="Иконка Телеграм">
+              <svg class="main-footer__social-icon" width="48" height="48">
+                <use xlink:href="img/sprite.svg#icon-tg"></use>
+              </svg>
             </a>
 
             <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-              <img src="img/youtube-icon.svg" alt="Иконка youtube">
+              <svg class="main-footer__social-icon" width="48" height="48">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
             </a>
           </div>
 
-          <div class="copyright main-footer__copyright">
-            <span class="copyright__text">Разработано</span>
-            <a class="copyright__link" href="https://htmlacademy.ru/">
-              <img src="img/htmlacademy-logo.svg" alt="Иконка HTML Academy">
+          <div class="copyright">
+            <a class="copyright__link copyright__link--form" href="https://htmlacademy.ru/">
+              <span class="copyright__text">Разработано</span>
+              <svg width="36" height="36">
+                <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
+              </svg>
             </a>
-          </div>
         </div>
       </footer>
     </main>

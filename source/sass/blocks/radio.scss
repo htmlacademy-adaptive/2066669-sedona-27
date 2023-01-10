@@ -12,12 +12,22 @@
     content: "";
     position: absolute;
     left: 0;
+    top: 0;
+    transform: translate(0, -10px);
     display: block;
     width: 46px;
     height: 46px;
     background-color: $color-input;
-    border: 15px solid $color-input;
     border-radius: 50%;
+    cursor: pointer;
+  }
+
+  &:hover::before {
+    background-color: $color-focus;
+  }
+
+  &:active::before {
+    background-color: $color-active;
   }
 }
 
@@ -28,6 +38,10 @@
 .radio__input:checked[type="radio"]:checked ~ .radio__point {
   background-color: $gray;
   border-radius: 50%;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .radio__point {

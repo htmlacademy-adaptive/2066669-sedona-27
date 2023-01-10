@@ -42,7 +42,7 @@
   @media (min-width: $tablet-width) {
     background-image: url("../img/back-tablet.jpg");
     padding: 77px 0 94px;
-    margin-bottom: 46px;
+    margin-bottom: 45px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-tablet@2x.jpg");
@@ -51,7 +51,8 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/back-desktop.jpg");
-    margin-bottom: 59px;
+    margin-bottom: 60px;
+    padding: 77px 0 92px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/back-desktop@2x.jpg");
@@ -92,7 +93,7 @@
 
     @media (min-width: $desktop-width) {
       background-image: url("../img/back-desktop.jpg");
-      padding: 101px 0 120px;
+      padding: 100px 0 120px;
       margin-bottom: 100px;
 
       @media (min-resolution: 2dppx) {
@@ -104,10 +105,12 @@
   &--form {
     @media (min-width: $tablet-width) {
       margin-bottom: 61px;
+      padding: 94px 0 116px;
     }
 
     @media (min-width: $desktop-width) {
       margin-bottom: 115px;
+      padding: 101px 0 120px;
     }
   }
 }
