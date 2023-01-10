@@ -3,11 +3,11 @@
   padding: 40px 18px 49px;
 
   @media (min-width: $tablet-width) {
-    padding: 58px 18px;
+    padding: 60px 18px 58px;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 60px 18px 67px;
+    padding: 60px 94px 67px;
   }
 }
 
@@ -35,7 +35,7 @@
   margin: 22px 0 31px;
 
   @media (min-width: $tablet-width) {
-    margin: 33px 0 42px;
+    margin: 33px 0 40px;
     padding: 0 166px;
   }
 

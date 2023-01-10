@@ -23,7 +23,7 @@
 }
 
 .catalog__card {
-  padding: 25px 20px 25px;
+  padding: 25px 20px 26px;
   position: relative;
 
   &::before {
@@ -93,7 +93,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: $color-input;
-    padding: 23px 20px 15px;
+    padding: 22px 20px 11px 13px;
   }
 
   @media (min-width: $desktop-width) {
@@ -102,7 +102,13 @@
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     color: $white;
-    padding: 19px 20px 14px;
+    padding: 19px 20px 10px 16px;
+  }
+
+  &--pbig {
+    @media (min-width: $desktop-width) {
+      padding: 18px 19px 12px 19px;
+    }
   }
 }
 
@@ -128,7 +134,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-  margin-bottom: 11px;
+  margin-bottom: 10px;
   color: $gray;
 
   @media (min-width: $tablet-width) {
@@ -137,12 +143,18 @@
 
   @media (min-width: $desktop-width) {
     color: $white;
+    margin-top: 2px;
   }
 }
 
 .catalog__likes {
   display: flex;
-  align-items: center;
+  align-items: baseline;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    margin-top: -6px;
+  }
 
   a {
     display: block;

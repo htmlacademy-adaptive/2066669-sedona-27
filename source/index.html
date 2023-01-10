@@ -15,7 +15,7 @@
       <a class="main-header__logo" href="index.html">
         <img src="img/header-logo.svg" width="185" height="96" alt="Маленький логотип Седоны">
       </a>
-      <nav class="main-nav main-nav--opened main-nav--nojs">
+      <nav class="main-nav main-nav--closed main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -78,12 +78,12 @@
           </div>
 
           <div class="advantages__item advantages__item--detail advantages__item--detail-gift advantages__item--pb-big">
-            <h3 class="title advantages__title advantages__title--mb">Сувениры</h3>
+            <h3 class="title advantages__title advantages__title--mb advantages__title--msmall">Сувениры</h3>
             <p class="description advantages__description">Не только китайского, но и местного производства!</p>
           </div>
 
           <div class="advantages__item advantages__item--blue">
-            <h3 class="title advantages__title">Там есть Мост дьявола</h3>
+            <h3 class="title advantages__title advantages__title--mbig">Там есть Мост дьявола</h3>
             <div class="advantages__number">— №2 —</div>
             <p class="description advantages__description advantages__description--white">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
@@ -100,7 +100,7 @@
 
           <div class="advantages__item advantages__item--gray advantages__item--specific advantages__line">
             <h3 class="title advantages__title advantages__title--gray">Красивая дорога</h3>
-            <div class="advantages__number">— №4 —</div>
+            <div class="advantages__number advantages__number--gray">— №4 —</div>
             <p class="description advantages__description advantages__description--m-big">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
 
@@ -136,22 +136,30 @@
 
           <div class="social main-footer__social">
             <a class="social__link" href="https://vk.com/htmlacademy">
-              <img src="img/vk-icon.svg" alt="Иконка Вконтакте">
+              <svg class="main-footer__social-icon" width="48" height="48">
+                <use xlink:href="img/sprite.svg#icon-vk"></use>
+              </svg>
             </a>
 
             <a class="social__link" href="https://t.me/htmlacademy">
-              <img src="img/telegram-icon.svg" alt="Иконка Телеграм">
+              <svg class="main-footer__social-icon" width="48" height="48">
+                <use xlink:href="img/sprite.svg#icon-tg"></use>
+              </svg>
             </a>
 
             <a class="social__link" href="https://www.youtube.com/user/htmlacademyru">
-              <img src="img/youtube-icon.svg" alt="Иконка youtube">
+              <svg class="main-footer__social-icon" width="48" height="48">
+                <use xlink:href="img/sprite.svg#icon-youtube"></use>
+              </svg>
             </a>
           </div>
 
           <div class="copyright">
-            <span class="copyright__text">Разработано</span>
             <a class="copyright__link" href="https://htmlacademy.ru/">
-              <img src="img/htmlacademy-logo.svg" alt="Иконка HTML Academy">
+              <span class="copyright__text">Разработано</span>
+              <svg width="36" height="36">
+                <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
+              </svg>
             </a>
           </div>
         </div>

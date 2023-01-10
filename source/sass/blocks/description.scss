@@ -5,8 +5,8 @@
   line-height: 21px;
   text-transform: uppercase;
   color: $gray;
+}
 
-  @media (min-width: $tablet-width) {
-    line-height: 24px;
-  }
+.description__form {
+  line-height: 24px;
 }

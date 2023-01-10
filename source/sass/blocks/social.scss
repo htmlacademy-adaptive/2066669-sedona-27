@@ -5,9 +5,18 @@
 }
 
 .social__link {
-  width: 46px;
+  width: 48px;
   height: 48px;
   margin-right: 6px;
+  background-color: $blue;
+
+  &:hover {
+    background-color: $color-btn;
+  }
+
+  &:active {
+    background-color: $nav-color;
+  }
 
   &:last-child {
     margin: 0;

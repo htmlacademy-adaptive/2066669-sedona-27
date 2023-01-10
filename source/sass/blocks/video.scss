@@ -6,6 +6,10 @@
   @media (min-width: $tablet-width) {
     width: 768px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 800px;
+  }
 }
 
 .video__wrapper {
@@ -13,6 +17,10 @@
 
   @media (min-width: $tablet-width) {
     padding: 58px 155px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 58px 169px 0;
   }
 }
 
@@ -42,19 +50,8 @@
 .video__player {
   position: relative;
 
-  img {
-    display: block;
-    margin: 0 auto;
-
-    @media (min-width: $tablet-width) {
-      width: 100%;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 768px;
-    margin-bottom: 40px;
-    padding: 0 60px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 79px;
   }
 }
 
