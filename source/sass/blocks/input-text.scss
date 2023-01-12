@@ -26,8 +26,18 @@
     border: 4px solid transparent;
     background-color: $color-input;
 
+    &:hover {
+      background: $color-focus;
+    }
+
     &:focus {
       border: 4px solid $color-focus;
+      background: $white;
+    }
+
+    &:active {
+      border: 4px solid $color-focus;
+      background: $white;
     }
   }
 }

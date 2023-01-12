@@ -18,6 +18,14 @@
     border: none;
     border-radius: 4px;
   }
+
+  &:hover::before {
+    background-color: $color-focus;
+  }
+
+  &:active::before {
+    background-color: $color-active;
+  }
 }
 
 .checkbox__input {
@@ -27,6 +35,10 @@
 .checkbox__input:checked[type="checkbox"]:checked ~ .checkbox__tick {
   background-image: url("../img/tick.svg");
   background-repeat: no-repeat;
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .checkbox__tick {

@@ -38,13 +38,13 @@
 
     @media (min-width: $tablet-width) {
       width: 256px;
-      padding: 52px 33px 17px;
+      padding: 54px 33px 17px;
       order: 1;
     }
 
     @media (min-width: $desktop-width) {
       width: 400px;
-      padding: 52px 60px 17px;
+      padding: 52px 28px 17px;
     }
   }
 
@@ -80,7 +80,7 @@
 
   &--specific {
     @media (min-width: $tablet-width) {
-      padding: 44px 48px;
+      padding: 44px 48px 43px;
     }
 
     @media (min-width: $desktop-width) {
@@ -93,7 +93,7 @@
     position: relative;
     color: $black;
     background-color: $white;
-    padding: 35px 18px 0 65px;
+    padding: 32px 18px 0 65px;
 
     &::before {
       content: "";
@@ -103,14 +103,14 @@
 
     @media (min-width: $tablet-width) {
       width: 256px;
-      padding: 62px 33px;
+      padding: 61px 33px;
       text-align: center;
       order: 4;
     }
 
     @media (min-width: $desktop-width) {
       width: 400px;
-      padding: 92px 33px 71px;
+      padding: 92px 24px 71px;
     }
   }
 
@@ -198,6 +198,10 @@
 
   &--pb-big {
     padding-bottom: 46px;
+
+    @media (min-width: $desktop-width) {
+      padding: 92px 40px 50px;
+    }
   }
 
   &--photo {
@@ -299,6 +303,12 @@
     padding: 0 65px;
   }
 
+  &--mbig {
+    @media (min-width: $desktop-width) {
+      margin: 0 0 13px 0;
+    }
+  }
+
   &--more {
     text-align: left;
     margin-bottom: 16px;
@@ -309,7 +319,7 @@
 
     @media (min-width: $tablet-width) {
       margin-top: 96px;
-      margin-bottom: 22px;
+      margin-bottom: 23px;
     }
 
     @media (min-width: $desktop-width) {
@@ -317,10 +327,21 @@
     }
   }
 
+  &--msmall {
+    @media (min-width: $tablet-width) {
+      margin-top: 91px;
+      margin-bottom: 23px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 79px;
+    }
+  }
+
   &--gray {
     @media (min-width: $tablet-width) {
       padding: 0 30px;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
 
     @media (min-width: $desktop-width) {
@@ -336,19 +357,28 @@
   line-height: 21px;
   margin: 0 0 17px 0;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 0 24px 0;
+  }
+
   @media (min-width: $desktop-width) {
     margin: 0 0 23px 0;
   }
 
   &--mb-big {
     @media (min-width: $tablet-width) {
-      margin-bottom: 27px;
+      margin-bottom: 23px;
+      margin-top: 12px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 25px;
     }
   }
 
   &--gray {
     @media (min-width: $tablet-width) {
-      margin-bottom: 21px;
+      margin-bottom: 23px;
     }
   }
 }
