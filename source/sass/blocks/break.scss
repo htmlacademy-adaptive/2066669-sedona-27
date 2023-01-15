@@ -1,0 +1,15 @@
+.break {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: inline-block;
+  }
+}
+
+.break__form {
+  display: inline-block;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
