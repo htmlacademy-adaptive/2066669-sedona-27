@@ -260,14 +260,16 @@
   @media (min-width: $desktop-width) {
     margin-left: 64px;
   }
+}
+
+.feedback__img {
+  position: relative;
+
+  input {
+    padding-right: 77px;
+  }
 
   &--phone {
-    position: relative;
-
-    input {
-      padding-right: 77px;
-    }
-
     &::before {
       content: "";
       position: absolute;
@@ -283,12 +285,6 @@
   }
 
   &--mail {
-    position: relative;
-
-    input {
-      padding-right: 77px;
-    }
-
     &::before {
       content: "";
       position: absolute;

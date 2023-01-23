@@ -9,6 +9,7 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgmin';
 import svgstore from 'gulp-svgstore';
 import rename from 'gulp-rename';
+import cssmin from 'gulp-cssmin';
 import {deleteAsync as del} from 'del';
 
 // Styles
@@ -21,6 +22,8 @@ export const styles = () => {
       autoprefixer()
     ]))
     .pipe(gulp.dest('source/css', { sourcemaps: '.' }))
+    .pipe(cssmin())
+    .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
 
