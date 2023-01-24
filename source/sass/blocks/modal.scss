@@ -83,16 +83,6 @@
     padding: 18px 122px 14px;
   }
 
-  &--background {
-    display: block;
-    width: 100%;
-    background-color: $color-input;
-
-    @media (min-width: $tablet-width) {
-      padding: 18px 27px 14px;
-    }
-  }
-
   &--well {
     font-size: 18px;
     margin: 20px;
@@ -101,5 +91,15 @@
     @media (min-width: $tablet-width) {
       padding: 18px 165px 14px;
     }
+  }
+}
+
+.modal__footer {
+  display: block;
+  width: 100%;
+  background-color: $color-input;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 27px 14px;
   }
 }
