@@ -1,6 +1,5 @@
 .main-nav {
   display: flex;
-  // display: block;
   justify-content: flex-end;
   position: relative;
   align-items: center;
@@ -134,31 +133,5 @@
   @media (max-width: $mobile-width-only) {
     display: block;
     text-align: center;
-  }
-}
-
-.main-nav__item {
-  &--index {
-    @media (min-width: $tablet-width) {
-      grid-column: 1/2;
-    }
-  }
-
-  &--catalog {
-    @media (min-width: $tablet-width) {
-      grid-column: 2/3;
-    }
-  }
-
-  &--form {
-    @media (min-width: $tablet-width) {
-      grid-column: 4/5;
-    }
-  }
-
-  &--academy {
-    @media (min-width: $tablet-width) {
-      grid-column: 5/6;
-    }
   }
 }

@@ -9,7 +9,35 @@
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(1, 1, 1, 0.2);
 
+  &:nth-child(1) {
+    @media (min-width: $tablet-width) {
+      grid-column: 1/2;
+    }
+  }
+
+  &:nth-child(2) {
+    @media (min-width: $tablet-width) {
+      grid-column: 2/3;
+    }
+  }
+
+  &:nth-child(3) {
+    @media (min-width: $tablet-width) {
+      grid-column: 4/5;
+    }
+  }
+
+  &:nth-child(4) {
+    @media (min-width: $tablet-width) {
+      grid-column: 5/6;
+    }
+  }
+
   &:last-child {
+    @media (min-width: $tablet-width) {
+      grid-column: 5/6;
+    }
+
     &::after {
       content: "";
       position: absolute;
