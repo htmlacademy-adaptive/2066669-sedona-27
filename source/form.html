@@ -17,7 +17,7 @@
       <a class="main-header__logo" href="index.html">
         <img src="img/header-logo.svg" width="185" height="96" alt="Маленький логотип Седоны">
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -65,17 +65,17 @@
           <legend class="title feedback__title feedback__title--user">Представьтесь:</legend>
 
           <label class="input-text feedback__input-text" for="firstname">
-            <span>Имя*:</span>
+            <span class="feedback__banner">Имя*:</span>
             <input type="text" name="firstname" id="firstname" placeholder="Пётр" required>
           </label>
 
           <label class="input-text feedback__input-text" for="surname">
-            <span>Фамилия*:</span>
+            <span class="feedback__banner">Фамилия*:</span>
             <input type="text" name="surname" id="surname" placeholder="Пустота" required>
           </label>
 
           <label class="input-text feedback__input-text" for="midname">
-            <span>Отчество:</span>
+            <span class="feedback__banner">Отчество:</span>
             <input type="text" name="midname" id="midname" placeholder="Викторович" required>
           </label>
         </fieldset>
@@ -84,14 +84,14 @@
           <legend class="title feedback__title feedback__title--contacts">Контактная информация:</legend>
 
           <label class="input-text feedback__input-text feedback__logo " for="phone">
-            <span>Контактный телефон*:</span>
+            <span class="feedback__banner">Контактный телефон*:</span>
             <span class="feedback__img feedback__img--phone">
               <input type="tel" name="phone" id="phone" placeholder="Введите телефон" required>
             </span>
           </label>
 
           <label class="input-text feedback__email feedback__logo" for="email">
-            <span>Электронная почта*:</span>
+            <span class="feedback__banner">Электронная почта*:</span>
             <span class="feedback__img feedback__img--mail">
               <input type="email" name="email" id="email" placeholder="Введите e-mail" required>
             </span>

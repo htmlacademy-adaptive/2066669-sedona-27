@@ -12,6 +12,7 @@
 
   @media (min-width: $desktop-width) {
     padding: 0 120px;
+    margin-bottom: 72px;
   }
 }
 
@@ -101,7 +102,7 @@
     @media (min-width: $tablet-width) {
       padding-left: 167px;
       padding-right: 170px;
-      margin-bottom: 29px;
+      margin-bottom: 28px;
     }
 
     @media (min-width: $desktop-width) {
@@ -229,11 +230,11 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
-      margin-bottom: 16px;
+      margin-bottom: 25px;
     }
 
     @media (min-width: $desktop-width) {
-      margin-bottom: 62px;
+      margin-bottom: 71px;
     }
   }
 }
@@ -248,6 +249,17 @@
       margin-bottom: 15px;
     }
   }
+}
+
+.feedback__banner {
+  text-align: left;
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding-left: 16px;
+  margin-bottom: 1px;
+  text-transform: uppercase;
 }
 
 .feedback__logo {
@@ -301,7 +313,7 @@
 }
 
 .feedback__email {
-  margin-bottom: 34px;
+  margin-bottom: 33px;
 }
 
 .feedback__checkbox {
@@ -311,8 +323,13 @@
   &--mb {
     margin-bottom: 24px;
 
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+
     @media (min-width: $desktop-width) {
       margin-right: 0;
+      margin-bottom: 0;
     }
   }
 
@@ -324,6 +341,10 @@
     @media (min-width: $desktop-width) {
       margin-right: 62px;
     }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -375,7 +396,7 @@
 
 .feedback__radio {
   width: 246px;
-  margin-bottom: 36px;
+  padding: 0 0 36px 61px;
 
   @media (min-width: $tablet-width) {
     margin-right: 34px;
@@ -386,7 +407,11 @@
   }
 
   &--mb {
-    margin-bottom: 34px;
+    padding-bottom: 35px;
+
+    @media (min-width: $desktop-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
