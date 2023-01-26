@@ -12,8 +12,8 @@
     content: "";
     position: absolute;
     left: 0;
-    top: 0;
-    transform: translate(0, -10px);
+    top: auto;
+    // transform: translate(0, -10px);
     display: block;
     width: 46px;
     height: 46px;
@@ -48,9 +48,10 @@
   content: "";
   position: absolute;
   left: 15px;
-  top: 5px;
+  top: auto;
   display: block;
   width: 16px;
   height: 16px;
   border: none;
+  cursor: pointer;
 }

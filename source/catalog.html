@@ -17,7 +17,7 @@
       <a class="main-header__logo" href="index.html">
         <img src="img/header-logo.svg" width="185" height="96" alt="Маленький логотип Седоны">
       </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs">
+      <nav class="main-nav main-nav--opened main-nav--nojs">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
@@ -87,6 +87,9 @@
 
           <section class="catalog__card">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-cactus.webp 1x, img/photo-cactus@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
               <img class="catalog__photo" src="img/photo-cactus.jpg" srcset="img/photo-cactus@2x.jpg 2x" alt="Кактус.">
@@ -107,6 +110,9 @@
 
           <section class="catalog__card">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-mountain-road-desktop.webp 1x, img/photo-mountain-road-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-mountain-road-tablet.webp 1x, img/photo-mountain-road-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-mountain-road.webp 1x, img/photo-mountain-road@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-mountain-road-desktop.jpg 1x, img/photo-mountain-road-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-mountain-road-tablet.jpg 1x, img/photo-mountain-road-tablet@2x.jpg 2x">
               <img class="catalog__photo" src="img/photo-mountain-road.jpg" srcset="img/photo-mountain-road@2x.jpg 2x" alt="Извилистая дорога.">
@@ -127,6 +133,9 @@
 
           <section class="catalog__card catalog__card--down">
             <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-catalog-bridge-desktop.webp 1x, img/photo-catalog-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-catalog-bridge-tablet.webp 1x, img/photo-catalog-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-devils-bridge.webp 1x, img/photo-devils-bridge@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/photo-catalog-bridge-desktop.jpg 1x, img/photo-catalog-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-catalog-bridge-tablet.jpg 1x, img/photo-catalog-bridge-tablet@2x.jpg 2x">
               <img class="catalog__photo" src="img/photo-devils-bridge.jpg" srcset="img/photo-devils-bridge@2x.jpg 2x" alt="Скалистый мост.">
@@ -157,11 +166,14 @@
         </div>
         <div class="video__player">
           <picture>
+            <source type="image/webp" media="(min-width: 1200px)" srcset="img/player-screen-desktop.webp 1x, img/player-screen-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/player-screen-tablet.webp 1x, img/player-screen-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/player-screen.webp 1x, img/player-screen@2x.webp 2x">
             <source media="(min-width: 1200px)" srcset="img/player-screen-desktop.jpg 1x, img/player-screen-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" srcset="img/player-screen-tablet.jpg 1x, img/player-screen-tablet@2x.jpg 2x">
             <img src="img/player-screen.jpg" srcset="img/player-screen@2x.jpg 2x" alt="Дорога в горах.">
           </picture>
-          <button class="video__button"></button>
+          <button class="video__button" aria-label="Кнопка воспроизведения."></button>
         </div>
       </div>
 

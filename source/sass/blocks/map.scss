@@ -5,13 +5,31 @@
 .map__index {
   width: 320px;
   height: 350px;
+  background-image: url("../img/map-mobile.jpg");
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/map-mobile@2x.jpg");
+    background-size: 320px 350px;
+  }
 
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 350px;
+    background-image: url("../img/map-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-tablet@2x.jpg");
+      background-size: 768px 350px;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 1200px;
+    background-image: url("../img/map-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/map-desktop@2x.jpg");
+      background-size: 1200px 350px;
+    }
   }
 }
