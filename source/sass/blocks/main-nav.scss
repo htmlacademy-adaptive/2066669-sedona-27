@@ -42,6 +42,7 @@
     background-color: $blue;
     cursor: pointer;
     border: none;
+    overflow: hidden;
 
     &:hover {
       opacity: 0.6;
