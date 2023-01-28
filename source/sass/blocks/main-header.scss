@@ -1,6 +1,8 @@
 .main-header {
   position: relative;
   width: 320px;
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
   min-height: 56px;
   color: $black;
@@ -16,14 +18,16 @@
 }
 
 .main-header__logo {
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 50%;
-  transform: translate(-50%, 0%);
+  margin: 0 auto;
+  height: 56px;
+  display: inline-block;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0%);
     z-index: 2;
   }
 }
